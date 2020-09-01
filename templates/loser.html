@@ -1,0 +1,17 @@
+{% extends "results.html" %}
+{% block results %}
+    <h1>{{ title }}</h1>
+    <p>You've lost. Too bad!</p>
+    <div id="buttons">
+        <p>
+            <a href="/startgame">
+                <button type="button" class="btn btn-primary">Play again</button>
+            </a>
+        </p>
+        <p>
+            <a href="/welcome">
+                <button type="button" class="btn btn-danger">Read the rules</button>
+            </a>
+        </p>
+    </div>
+{% endblock %}

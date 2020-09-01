@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block title %}Welcome to Word Game!{% endblock %}
+{% block head %}
+    {{ super() }}
+        <style>
+        </style>
+{% endblock %}
+{% block body %}
+        <h1>{{ title }}</h1>
+        <h2>How to play</h2>
+            <p>You will be given a word that is seven letters or more long.
+                You must then make seven words from this given word which are at least
+                three letters long. The letters must be letters that are contained
+                within the word given.</p>
+            <ul>
+                <li>The letters in each word must come from the given word.</li>
+                <li>Each word exists within the dictionary.</li>
+                <li>Each word has at least three letters.</li>
+                <li>None of the words can be the same (i.e., duplicates).</li>
+                <li>None of the words are the given word.</li>
+                <li>Case does not matter. Words can be both upper or lower case.</li>
+            </ul>
+        <a href="/startgame">
+            <button type="button" class="btn btn-primary">Let's start</button>
+        </a>
+{% endblock %}

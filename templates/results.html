@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block body %}
+    <div class="alert alert-primary" role="alert">
+        {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
+    </div>
+    {% block results %}
+    {% endblock %}
+{% endblock %}

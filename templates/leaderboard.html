@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% block body %}
+    <p>You where placed in position {{ position }} out of {{ outOf }}</p>
+    <p>Top ten scores:</p>
+{#    <table border="1">#}
+{#        <tr>#}
+{#            <th>Position</th>#}
+{#            <th>Time</th>#}
+{#            <th>Player</th>#}
+{#            <th>Time</th>#}
+{#        </tr>#}
+{#        {% for time, user, word in leaderboard[:10] %}#}
+{#        <tr>#}
+{#            <td>{{loop.index}}</td>#}
+{#            <td>{{time}}</td>#}
+{#            <td>{{user}}</td>#}
+{#            <td>{{word}}</td>#}
+{#        </tr>#}
+{#        {% endfor %}#}
+{#    </table>#}
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">Position</th>
+          <th scope="col">Time</th>
+          <th scope="col">Username</th>
+          <th scope="col">Word</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for time, user, word in leaderboard[:10] %}
+        <tr>
+          <th scope="row">{{ loop.index }}</th>
+          <td>{{ time }}</td>
+          <td>{{ user }}</td>
+          <td>{{ word }}</td>
+        </tr>
+{#        <tr>#}
+{#          <th scope="row">2</th>#}
+{#          <td>{{ time }}</td>#}
+{#        </tr>#}
+{#        <tr>#}
+{#          <th scope="row">3</th>#}
+{#          <td>{{ word }}</td>#}
+{#        </tr>#}
+      {% endfor %}
+      </tbody>
+    </table>
+    <p>
+        <a href="/startgame">
+            <button type="button" class="btn btn-success">Play again</button>
+        </a>
+    </p>
+    <p>
+        <a href="/welcome">
+            <button type="button" class="btn btn-warning">Read the rules</button>
+        </a>
+    </p>
+{% endblock %}

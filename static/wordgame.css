@@ -1,0 +1,9 @@
+.frame {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.content {
+    justify-content: center;
+    margin-top: 25%;
+}

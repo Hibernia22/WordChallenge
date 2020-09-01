@@ -1,0 +1,12 @@
+{% extends "results.html" %}
+{% block results %}
+    <p>Well done, you've won!</p>
+    <p>Enter your username below to see your results.</p>
+    <form action="/processhighscore" method="post">
+        <div class="form-group">
+            <input type="text" class="form-control" id="username" aria-describedby="username" name="username" required autofocus>
+            <small id="username" class="form-text text-muted">Enter your username.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+{% endblock %}
