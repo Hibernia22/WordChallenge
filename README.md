@@ -11,7 +11,7 @@ Winners screen for recording the winning player:
 ![Alt text](screenshots/winner.png?raw=true "Winners Screen")
 
 Losers screen offers the chance to play again or read the rules:
-![Alt text](screenshots/loser.png?raw=true "Winners Screen")
+![Alt text](screenshots/lose****r.png?raw=true "Winners Screen")
 
 Leaderboard screen shows the top ten best players:
 ![Alt text](screenshots/leaderboard.png?raw=true "Leaderboard Screen")
