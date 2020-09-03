@@ -3,5 +3,6 @@
   <component name="SqlDialectMappings">
     <file url="file://$USER_HOME$/MySQL___gameDB_localhost-2020_09_02_14_39_53-dump.sql" dialect="GenericSQL" />
     <file url="file://$PROJECT_DIR$/data_processing.py" dialect="GenericSQL" />
+    <file url="file://$USER_HOME$/gameDB_localhost-2020_09_02_15_38_40-dump.sql" dialect="MySQL" />
   </component>
 </project>

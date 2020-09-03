@@ -11,11 +11,12 @@
         <p>The clock is ticking...</p>
         <p>Your word is {{ sourceWord }}</p>
         <form action="/processwords" method="post">
-            <div class="input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Words:</span>
-                </div>
-                <textarea class="form-control" aria-label="With textarea" name="sevenWords" required autofocus></textarea>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Answers:</span>
+              </div>
+              <input type="text" class="form-control" aria-label="Username"
+                     aria-describedby="basic-addon1" name="sevenWords" required autofocus>
             </div>
             <br><br>
             <input type="submit" value="Finish!">
