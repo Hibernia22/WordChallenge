@@ -3,9 +3,9 @@ import DBcm
 
 config = {
     'host': 'localhost',
-    'user': 'gameUser',
-    'password': 'gamePassword',
-    'database': 'gameDB',
+    'user': 'patrick',
+    'password': '_bR@LD66YHxE8ze',
+    'database': 'game_database',
 }
 
 
