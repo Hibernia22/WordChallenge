@@ -1,3 +1,4 @@
+import html
 from flask import Flask, render_template, session, request, flash, redirect
 
 import enchant
@@ -96,7 +97,7 @@ def process_high_score() -> 'html':
         return render_template('leaderboard.html',
                                title='Top high scores!',
                                leaderboard=leader_board,
-                               position=leader_board.index((time_taken, name, source))+1,
+                               #position=leader_board.index((time_taken, name, source))+1,
                                outOf=len(leader_board))
     else:
         return redirect('/')
